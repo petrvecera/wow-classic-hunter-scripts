@@ -49,6 +49,13 @@ I like to have both raptor and mongose out so I can see CD on them. But u can ha
 /cast Raptor Strike
 ```
 
+#### Eagle Eye
+With this u can get unlimited EE cos u can cast it inside the EE :)
+```
+#showtooltip
+/cast !eagle Eye
+```
+
 #### Feed
 Just swap the name of the food for the one u have
 ```
