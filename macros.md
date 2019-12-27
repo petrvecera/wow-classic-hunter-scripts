@@ -96,3 +96,10 @@ So u can BIND your trinkets
 #showtooltip
 /use 14
 ```
+
+#### Sell All Grey items in invetory
+Grey items in your invetory are 100% worthless, they can't be used for anything.
+Just come to the vendor and click on the macro button - awesome!
+```
+/run local c,i,n,v=0;for b=0,4 do for s=1,GetContainerNumSlots(b)do i={GetContainerItemInfo(b,s)}n=i[7]if n and string.find(n,"9d9d9d")then v={GetItemInfo(n)}q=i[2]c=c+v[11]*q;UseContainerItem(b,s)print(n,q)end;end;end;print(GetCoinText(c))
+```
