@@ -35,10 +35,12 @@ Here is my list of working macros for WoW Classic.
 
 #### Raptor Strike
 I like to have both raptor and mongose out so I can see CD on them. But u can have it as single button.
+Also start melee attack 
 ```
 #showtooltip Raptor Strike
 /cast Mongoose Bite
 /cast Raptor Strike
+/startattack
 ```
 
 #### Moogoose Bite
@@ -57,21 +59,31 @@ With this u can get unlimited EE cos u can cast it inside the EE :)
 ```
 
 #### Feed
-Just swap the name of the food for the one u have
+Just swap the name of the food for the one u have.
+This macro can detect the pet and feed them their food. Because the stupid wolf doesn't eat fish.
 ```
 #showtooltip
+#showtooltip
 /cast Feed Pet
-/use [pet]  Roasted Quail
+/use [pet:Cat] Spotted Yellowtail
+/use [pet:Cat] Darkclaw Lobster
+/use [pet:Wolf] Roasted Quail
+
 ```
 
 #### Aimed shot & furious howl
 This is useful when u have WOLF. You could remove the nocombat to have the howl everytime you cast the AS but 
 the problem is that AS has lower CD than FH which will spam you with "CD" warning. As far as I know there is no script to check
 if the spell is on CD than to cast it.
+
+Clear target/targetlast target to help with potential bug when aimed shot has "delay" after shooting. 
 ```
+#showtooltip Aimed Shot
 #showtooltip Aimed Shot
 /cast [nocombat] Furious Howl
 /cast Aimed Shot
+/cleartarget
+/targetlasttarget
 ```
 
 #### Revive 
